@@ -15,19 +15,16 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 132.243.203.207
-  port: 8443
+  server: 87.120.196.212
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
+  servername: holo-stream.videocactus.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

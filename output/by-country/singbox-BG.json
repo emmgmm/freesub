@@ -22,18 +22,17 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "132.243.203.207",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "87.120.196.212",
+      "server_port": 443,
+      "uuid": "5561acfb-0adc-4c76-bfbf-767a76c7cbf0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
+        "server_name": "holo-stream.videocactus.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },

@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "104.21.34.106",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "45.142.166.211",
       "server_port": 443,
-      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "nb.lovecf.ggff.net",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
+        "path": "/knowledge?ed=2560fp=chrome",
         "headers": {
-          "Host": "nb.lovecf.ggff.net"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
