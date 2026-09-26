@@ -21,6 +21,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.147
   port: 8443
@@ -43,7 +45,7 @@ proxies:
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 5.181.201.43
   port: 443
@@ -57,28 +59,6 @@ proxies:
     short-id: 38018dde3e27335e
   servername: est1.loozerp.wiki
   client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: 45.11.27.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
-    short-id: d0aae44f
-  servername: 5post-gate.x5.ru
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,8 +69,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,7 +79,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
