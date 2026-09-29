@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 62.72.166.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime40.workers.dev
-- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
   server: 34.51.29.171
   port: 443
   udp: true
@@ -26,7 +15,19 @@ proxies:
     public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
     short-id: dcabbf24adf88abc
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 45.134.9.133
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  tls: true
+  servername: ul-mexico1.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
